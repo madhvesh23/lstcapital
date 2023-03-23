@@ -30,7 +30,9 @@ h3{
 html{
     scroll-behavior: smooth;
 }
-
+body{
+  overflow-x: hidden;
+}
 /* Utility Classes */
 .text-secondary{
     color: #55BA53;
@@ -108,18 +110,16 @@ html{
 /* Top Navbar */
 
 nav{
-    display: flex !important;
-    height: 53px;
+  height: 53px;
     width: 100%;
-    background: #150d0dd1;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 124px 3px 100px;
-    display: flex;
+    padding: 15px 164px 0px 259px;
     flex-wrap: wrap;
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 1000;
+    display: flex !important;
   }
   nav .logo{
     color: #fff;
@@ -338,7 +338,18 @@ top: 0;
 	font-size: 1.2em;
 	font-weight: 500;
 }
+/* carousel transitions modify */
+.carousel .carousel-indicators li{
+  background-color: none;
+}
 
+.carousel .carousel-indicators li.active {
+  background-color: #55BA53;
+}
+
+.carousel .carousel-item {
+  transition-duration: .9s;
+}
 
 
 .showcase .showcase-content .btn-left{
@@ -1294,4 +1305,40 @@ vertical-align: middle;
       #carouselExampleIndicators .carousel-inner .carousel-item h1{
         font-size: 1.5rem;
       }
+}
+
+
+/* javascript added classes */
+
+/* navbar */
+.nav-add{
+  display: flex !important;
+  height: 61px;
+  width: 87%;
+  background: #000000b8;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 13px;
+  margin: 12px 6.5%;
+  padding: 2px 135px 3px 3px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 10px;
+  z-index: 1000;
+  transition: .9s;
+}
+
+/* navbar logo img */
+.logo-img-add{
+  height: 55px!important;
+  margin-top: -21px!important;
+  border: 1px solid white!important;
+  border-radius: 10px!important;
+  transition: .9s;
+}
+
+.nav-list-add{
+  font-size: 15px!important;
+  font-weight: 500;
 }
