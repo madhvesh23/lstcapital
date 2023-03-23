@@ -114,7 +114,7 @@ nav{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 164px 0px 259px;
+    padding: 15px 28px 0px 104px;
     flex-wrap: wrap;
     position: fixed;
     top: 0px;
@@ -130,7 +130,7 @@ nav{
   }
   nav ul{
     display: flex;
-    padding-top:  9px;
+    padding-top:  16px;
     flex-wrap: wrap;
     list-style: none;
   }
@@ -445,7 +445,7 @@ top: 0;
 #goal .goal-img{
     display: inline-block;
     position: relative;
-    width: 600px;
+    max-width: 600px;
     height: 380px;
     overflow: hidden;
 }
@@ -456,7 +456,13 @@ top: 0;
 }
 #goal .goal-text{
     margin: 0 40px;
+    /* border: 2px solid red; */
 
+
+}
+
+.goal-text .contents{
+  /* border: 2px solid red; */
 }
 #goal .goal-text a{
     color: #f4f4f4;
@@ -1313,24 +1319,25 @@ vertical-align: middle;
 /* navbar */
 .nav-add{
   display: flex !important;
-  height: 61px;
-  width: 87%;
+  height: 78px;
+  max-width: 87%;
   background: #000000b8;
   align-items: center;
   justify-content: space-between;
   border-radius: 13px;
   margin: 12px 6.5%;
-  padding: 2px 135px 3px 3px;
+  padding: 2px 95px 3px 3px;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  top: 10px;
+  top: 7px;
   z-index: 1000;
   transition: .9s;
 }
 
 /* navbar logo img */
 .logo-img-add{
+  margin: -4px 12px;;
   height: 55px!important;
   margin-top: -21px!important;
   border: 1px solid white!important;
@@ -1341,4 +1348,7 @@ vertical-align: middle;
 .nav-list-add{
   font-size: 15px!important;
   font-weight: 500;
+}
+.flex-nav{
+  border: 2px solid red;
 }
